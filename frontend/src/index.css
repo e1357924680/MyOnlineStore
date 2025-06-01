@@ -1,0 +1,105 @@
+:root {
+	--bs-body-bg: #f8f9fa;          /* very light gray background */
+	--bs-body-color: #212529;       /* almost black text */
+	--bs-primary: #343a40;          /* dark gray */
+	--bs-primary-text: #ffffff;
+	--bs-secondary: #6c757d;        /* medium gray */
+	--bs-secondary-text: #ffffff;
+	--bs-light: #ffffff;            /* white */
+	--bs-light-text: #212529;
+	--bs-dark: #000000;             /* black */
+	--bs-dark-text: #ffffff;
+}
+
+
+/* Base page styling */
+body {
+	background-color: var(--bs-body-bg) !important;
+	color: var(--bs-body-color) !important;
+}
+.bg-primary {
+	background-color: var(--bs-primary) !important;
+}
+.bg-secondary {
+	background-color: var(--bs-secondary) !important;
+}
+/* Links & headings */
+a,
+.nav-link,
+.navbar-brand {
+	color: var(--bs-light-text) !important;
+}
+.navbar-dark .nav-link:hover,
+.navbar-dark .navbar-brand:hover {
+	color: var(--bs-secondary-text) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+	color: var(--bs-dark) !important;
+}
+
+/* Buttons */
+.btn-outline-primary {
+	color: var(--bs-primary) !important;
+	border-color: var(--bs-primary) !important;
+}
+.btn-outline-primary:hover {
+	background-color: var(--bs-primary) !important;
+	color: var(--bs-primary-text) !important;
+}
+.btn-primary {
+	background-color: var(--bs-primary) !important;
+	border-color: var(--bs-primary) !important;
+	color: var(--bs-primary-text) !important;
+}
+.btn-primary:hover {
+	background-color: var(--bs-dark) !important;
+	border-color: var(--bs-dark) !important;
+}
+.btn-secondary {
+	background-color: var(--bs-secondary) !important;
+	border-color: var(--bs-secondary) !important;
+	color: var(--bs-secondary-text) !important;
+}
+
+.text-primary {
+	color: var(--bs-primary) !important;
+}
+.text-secondary {
+	color: var(--bs-secondary-text) !important;
+}
+
+.card {
+	background-color: var(--bs-light) !important;
+	border: 2px solid var(--bs-primary);
+	border-radius: 0.75rem;
+	padding: 1.5rem;
+	box-shadow: 0 2px 4px rgba(var(--bs-primary-rgb), 0.1);
+	margin-bottom: 2rem;
+}
+.card .card-title {
+	color: var(--bs-primary) !important;
+}
+
+.form-control,
+.form-select {
+	background-color: var(--bs-light) !important;
+	color: var(--bs-body-color) !important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-control::placeholder {
+	color: rgba(78, 52, 46, 0.6) !important;
+}
+.window {
+	background-color: var(--bs-secondary);
+	border: 2px solid var(--bs-primary);
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	box-shadow: 0 2px 4px rgba(var(--bs-primary-rgb), 0.1);
+	margin-bottom: 2rem;
+}
